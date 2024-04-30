@@ -1,1 +1,2 @@
-form=document.getElementById()
+mainSec=document.getElementById("main");
+console.log(mainSec)
