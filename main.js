@@ -1,2 +1,7 @@
-mainSec=document.getElementById("main");
-console.log(mainSec)
+mainSec=document.getElementById("mainSec");
+mainSec.addEventListener('load',main);
+
+
+function main (){
+    console.log("here");
+};
