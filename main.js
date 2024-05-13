@@ -1,5 +1,5 @@
 let mainSec=document.getElementById("mainSec");
-mainSec.addEventListener("load",main());
+mainSec.addEventListener("load",main);
 
 function main (){
 alert("here");
