@@ -3,5 +3,5 @@ main.addEventListener('load',onload());
 let page ="home";
 function onload(){
     //TODO add a nav section
-    nav();
+creatForm();
 }
