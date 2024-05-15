@@ -1,5 +1,7 @@
 let main = document.getElementById("main");
 main.addEventListener('load',onload());
+let page ="home";
 function onload(){
-    alert("here")
+    //TODO add a nav section
+    nav();
 }
