@@ -8,13 +8,15 @@ function nav(){
 function creatForm(){
     console.log("add form");
    let form= document.createElement("form");
-    formText("number","int","int");
+   form.setAttribute("action","home")
+    formText("number");
     append(form);
 
 }
 function formText(name){
     let text= document.createElement("imput");
-    text.setAttribute("value",name)
+    text.setAttribute("type",name)
+    append(text)
     
 };
 function append (x){
