@@ -1,24 +1,24 @@
 function nav(){
     let a = document.createElement("a");
     a.innerText=("text");
-    // a.innerHTML("src","#");
+    a.innerHTML("src","#");
     console.log(a);
-    creatForm();
 }
 function creatForm(){
-    console.log("add form");
    let form= document.createElement("form");
-   form.setAttribute("action","home")
-    formText("number");
+   form.setAttribute("action","home");
     append(form);
-
+    formImput("number","str",0);
+    //TODO than exsport the form var to the other function to sind it to 
+    function formImput(type,name,value){
+        let text= document.createElement("input");
+        text.setAttribute("type",type);
+        text.setAttribute("name",name);
+        text.setAttribute("value",value);
+        form.appendChild(text)
+    };
 }
-function formText(name){
-    let text= document.createElement("imput");
-    text.setAttribute("type",name)
-    append(text)
-    
-};
+
 function append (x){
     main.appendChild(x);
 }
