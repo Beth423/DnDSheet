@@ -5,6 +5,9 @@ function nav(){
     console.log(a);
 }
 function creatForm(){
+    let sideBar = document.createElement("dive")
+    sideBar.setAttribute("id",sideBar)
+    
    let form= document.createElement("form");
    let stats=["str","int","con","dex","wiz"]
    form.setAttribute("action","form.php");
@@ -20,9 +23,10 @@ function creatForm(){
         label.innerText=(stats[i]);
         // using rado button 
         //? look up whether a function var can be sent back to the calling function
-        let rado= document.createElement("imput");
-        rado.setAttribute("type","rado");
-        rado.setAttribute("name","rado");
+        //todo append all at once on one line 
+        let rado= document.createElement("input");
+        rado.setAttribute("type","radio");
+        rado.setAttribute("name",stats[i]);
         console.log(rado)
         let text= document.createElement("input");
         text.setAttribute("type","number");
